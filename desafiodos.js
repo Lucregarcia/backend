@@ -36,7 +36,7 @@ class ProductManager {
     addProduct = async product => {
         try {
             if(await this.isCodeUnique(product.code)) {
-                return 'Este producto ya existe';
+                return 'El producto ya existe';
             }
             if(!this.validateFields(product)) {
                 return 'Todos los campos del producto deben ser ingresados';
