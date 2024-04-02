@@ -129,7 +129,7 @@ const product2 = {
     stock: 5
 };
 
-const manager = new ProductManager('./products.json');
+const manager = new ProductManager('path');
 
 async function test () {
     console.log(await manager.addProduct(product1));
