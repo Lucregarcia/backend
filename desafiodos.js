@@ -60,7 +60,7 @@ class ProductManager {
             const products = await fs.promises.readFile(this.path, 'utf-8');
             return JSON.parse(products);
         } catch (error) {
-            if(error.message.includes('no such file or directory')) return [];
+            if(error.message.includes('no se encuentra en los archivos')) return [];
             console.log(error);
         }
     }
